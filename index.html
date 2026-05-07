@@ -3,189 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BY FIAN STORE | PREMIUM DIGITAL</title>
+    <title>BY FIAN STORE | 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #070114; color: white; overflow-x: hidden; }
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
-        .gradient-brand { background: linear-gradient(90deg, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; align-items: center; justify-content: center; backdrop-filter: blur(10px); }
+        body { font-family: sans-serif; background: #070114; color: white; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 100; align-items: center; justify-content: center; }
         .modal.active { display: flex; }
         .disk-spin { animation: spin 3s linear infinite; }
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: #ec4899; border-radius: 10px; }
-        .scroll-custom::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-thumb { background: #8b5cf6; }
     </style>
 </head>
-<body class="pb-48">
+<body class="pb-20">
 
-    <header class="py-16 text-center relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 bg-purple-600/10 blur-[120px] -z-10"></div>
-        <h1 class="text-6xl font-black italic gradient-brand tracking-tighter mb-2">BY FIAN STORE</h1>
-        <p class="text-gray-500 text-[10px] tracking-[0.5em] uppercase font-bold">The Best Choice for Your Digital Needs</p>
+    <header class="py-12 text-center">
+        <div class="inline-block bg-purple-600/20 px-4 py-1 rounded-full text-[10px] font-bold tracking-widest mb-4 border border-purple-500/30">🚀 SERVER STATUS: ONLINE 24/7</div>
+        <h1 class="text-5xl font-black italic text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">BY FIAN STORE</h1>
+        <p class="text-gray-500 text-[10px] tracking-[0.4em] uppercase mt-1">Premium Digital Solution</p>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <div class="glass p-8 rounded-[3rem] border-purple-500/20">
-            <h2 class="text-xl font-black mb-6 flex items-center text-purple-400 uppercase italic">
-                <i class="fas fa-server mr-3"></i> Menu Panel
+    <section class="max-w-4xl mx-auto px-6 mb-12">
+        <div class="glass p-6 rounded-[2rem] text-center">
+            <h2 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-6 flex items-center justify-center">
+                <i class="fas fa-list-ol mr-2"></i> Langkah Pembelian
             </h2>
-            <div class="grid grid-cols-2 gap-4 h-[500px] overflow-y-auto pr-2 scroll-custom">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-[10px]">
+                <div><p class="font-bold text-white">1. Pilih Produk</p><p class="text-gray-500">Pilih menu di bawah</p></div>
+                <div><p class="font-bold text-white">2. Scan QRIS</p><p class="text-gray-500">Bayar sesuai harga</p></div>
+                <div><p class="font-bold text-white">3. Isi Nomor</p><p class="text-gray-500">Input WA/Dana aktif</p></div>
+                <div><p class="font-bold text-white">4. Kirim Bukti</p><p class="text-gray-500">Konfirmasi ke Admin</p></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass p-6 rounded-[2.5rem]">
+            <h2 class="text-sm font-bold text-purple-400 mb-4 uppercase italic italic">Menu Panel</h2>
+            <div class="grid grid-cols-2 gap-3 h-80 overflow-y-auto pr-1 scroll-custom">
                 <script>
                     for(let i=1; i<=10; i++) {
-                        document.write(`
-                            <div onclick="openOrder('Panel ${i}GB', '${i}K')" class="bg-white/5 p-5 rounded-3xl border border-white/5 hover:bg-purple-500/10 hover:border-purple-500/40 transition cursor-pointer group">
-                                <p class="text-[9px] text-gray-500 font-bold uppercase mb-1">RAM Limit</p>
-                                <p class="font-black text-2xl group-hover:text-purple-400 transition">${i}GB</p>
-                                <p class="text-xs font-bold mt-1">${i}.000 IDR</p>
-                            </div>
-                        `);
+                        document.write(`<div onclick="openOrder('Panel ${i}GB', '${i}K')" class="bg-white/5 p-4 rounded-2xl border border-white/5 hover:bg-purple-500/10 cursor-pointer transition">
+                            <p class="text-[8px] text-gray-500 font-bold uppercase">RAM</p>
+                            <p class="font-black text-xl">${i}GB</p>
+                            <p class="text-[10px] text-purple-400 font-bold">${i}.000 IDR</p>
+                        </div>`);
                     }
                 </script>
             </div>
         </div>
 
-        <div class="glass p-8 rounded-[3rem] border-pink-500/20">
-            <h2 class="text-xl font-black mb-6 flex items-center text-pink-500 uppercase italic">
-                <i class="fas fa-crown mr-3"></i> Special Menu
-            </h2>
-            <div class="space-y-3 h-[500px] overflow-y-auto pr-2 scroll-custom">
+        <div class="glass p-6 rounded-[2.5rem]">
+            <h2 class="text-sm font-bold text-pink-500 mb-4 uppercase italic">Special Role</h2>
+            <div class="space-y-2 h-80 overflow-y-auto pr-1">
                 <script>
-                    const roles = [
-                        {n: "MANAGER SVIP", p: "15k"}, {n: "MANAGER VIP", p: "13.4k"},
-                        {n: "KEPEMILIKAN", p: "12.3k"}, {n: "VIP MEMBER", p: "11k"},
-                        {n: "ASISTEN", p: "10.1k"}, {n: "DEVELOPER", p: "9.2k"},
-                        {n: "CEO", p: "8.1K"}, {n: "TANGAN KANAN", p: "7.1K"},
-                        {n: "OWNER", p: "6.4K"}, {n: "ADMIN PANEL", p: "4K"},
-                        {n: "PARTNER", p: "3.1K"}, {n: "RESELLER", p: "2.1k"},
-                        {n: "PREMIUM", p: "1.1k"}
-                    ];
+                    const roles = [{n:"MANAGER SVIP", p:"15k"}, {n:"MANAGER VIP", p:"13.4k"}, {n:"KEPEMILIKAN", p:"12.3k"}, {n:"VIP MEMBER", p:"11k"}, {n:"ASISTEN", p:"10.1k"}, {n:"DEVELOPER", p:"9.2k"}, {n:"CEO", p:"8.1K"}, {n:"TANGAN KANAN", p:"7.1K"}, {n:"OWNER", p:"6.4K"}, {n:"ADMIN PANEL", p:"4K"}, {n:"PARTNER", p:"3.1K"}, {n:"RESELLER", p:"2.1k"}, {n:"PREMIUM", p:"1.1k"}];
                     roles.forEach(r => {
-                        document.write(`
-                            <div onclick="openOrder('${r.n}', '${r.p}')" class="flex justify-between items-center p-5 bg-white/5 rounded-[1.8rem] cursor-pointer hover:bg-pink-500/10 border border-transparent hover:border-pink-500/30 transition group">
-                                <span class="text-xs font-black uppercase tracking-widest group-hover:translate-x-1 transition">${r.n}</span>
-                                <span class="font-black text-pink-500 bg-pink-500/10 px-4 py-2 rounded-2xl text-[10px]">${r.p}</span>
-                            </div>
-                        `);
+                        document.write(`<div onclick="openOrder('${r.n}', '${r.p}')" class="flex justify-between items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-pink-500/10 transition text-[10px] font-bold uppercase"><span>${r.n}</span><span class="text-pink-500">${r.p}</span></div>`);
                     });
                 </script>
             </div>
         </div>
 
-        <div class="glass p-8 rounded-[3rem] border-blue-500/20">
-            <h2 class="text-xl font-black mb-6 text-blue-400 flex items-center uppercase italic">
-                <i class="fas fa-microchip mr-3"></i> VPS DO
-            </h2>
-            <div class="space-y-5">
-                <div onclick="openOrder('VPS Spec R2 C2', '10k')" class="p-6 bg-white/5 rounded-[2.5rem] border border-white/5 hover:scale-[1.03] transition cursor-pointer">
-                    <p class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Spec Digital Ocean</p>
-                    <p class="text-4xl font-black my-2">10K <span class="text-xs text-blue-400">/ R2 C2</span></p>
-                    <p class="text-[10px] font-bold bg-blue-500/10 text-blue-400 inline-block px-3 py-1 rounded-full border border-blue-500/20">Garansi 3 Hari</p>
+        <div class="glass p-6 rounded-[2.5rem]">
+            <h2 class="text-sm font-bold text-blue-400 mb-4 uppercase italic">VPS DO</h2>
+            <div class="space-y-3">
+                <div onclick="openOrder('VPS R2 C2', '10k')" class="p-5 bg-white/5 rounded-2xl border border-white/5 hover:bg-blue-500/10 cursor-pointer transition">
+                    <p class="text-[9px] text-gray-500 font-bold uppercase">Spec R2 C2</p>
+                    <p class="text-3xl font-black my-1">10K</p>
+                    <p class="text-[8px] text-blue-400 font-bold">Garansi 3 Hari</p>
                 </div>
-                <div onclick="openOrder('VPS Spec R4 C4', '14k')" class="p-6 bg-white/5 rounded-[2.5rem] border border-white/5 hover:scale-[1.03] transition cursor-pointer">
-                    <p class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Spec Digital Ocean</p>
-                    <p class="text-4xl font-black my-2">14K <span class="text-xs text-blue-400">/ R4 C4</span></p>
-                    <p class="text-[10px] font-bold bg-blue-500/10 text-blue-400 inline-block px-3 py-1 rounded-full border border-blue-500/20">Garansi 7 Hari</p>
+                <div onclick="openOrder('VPS R4 C4', '14k')" class="p-5 bg-white/5 rounded-2xl border border-white/5 hover:bg-blue-500/10 cursor-pointer transition">
+                    <p class="text-[9px] text-gray-500 font-bold uppercase">Spec R4 C4</p>
+                    <p class="text-3xl font-black my-1">14K</p>
+                    <p class="text-[8px] text-blue-400 font-bold">Garansi 7 Hari</p>
                 </div>
-                <div onclick="openOrder('VPS Spec R8 C4', '25k')" class="p-6 bg-white/5 rounded-[2.5rem] border border-white/5 hover:scale-[1.03] transition cursor-pointer">
-                    <p class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Spec Digital Ocean</p>
-                    <p class="text-4xl font-black my-2">25K <span class="text-xs text-blue-400">/ R8 C4</span></p>
-                    <p class="text-[10px] font-bold bg-blue-500/10 text-blue-400 inline-block px-3 py-1 rounded-full border border-blue-500/20">Garansi 12 Hari</p>
+                <div onclick="openOrder('VPS R8 C4', '25k')" class="p-5 bg-white/5 rounded-2xl border border-white/5 hover:bg-blue-500/10 cursor-pointer transition">
+                    <p class="text-[9px] text-gray-500 font-bold uppercase">Spec R8 C4</p>
+                    <p class="text-3xl font-black my-1">25K</p>
+                    <p class="text-[8px] text-blue-400 font-bold">Garansi 12 Hari</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="fixed bottom-8 right-8 glass p-6 rounded-[2.5rem] w-80 z-[99] border-white/10 shadow-2xl shadow-purple-900/20">
-        <div class="flex items-center gap-4 mb-5">
-            <div id="disk" class="w-14 h-14 bg-gradient-to-tr from-purple-600 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
-                <i class="fas fa-music text-xl"></i>
-            </div>
-            <div class="overflow-hidden">
-                <p class="text-[9px] text-purple-400 font-black uppercase tracking-[0.2em]">Live Audio</p>
-                <marquee id="stitle" class="text-xs font-black italic">Pilih Lagunya Bos!</marquee>
-            </div>
+    <div class="fixed bottom-4 left-4 glass p-4 rounded-3xl w-56 z-[99] border-white/10 shadow-2xl">
+        <div class="flex items-center gap-3 mb-3">
+            <div id="disk" class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center"><i class="fas fa-compact-disc text-sm"></i></div>
+            <marquee id="stitle" class="text-[9px] font-bold text-gray-300">Pilih Lagu Bosku!</marquee>
         </div>
-        <div class="grid grid-cols-1 gap-2 mb-5">
-            <button onclick="play('https://p.scdn.co/mp3-preview/766d03d8d67c9431477740e2197be5f5194d2f09', 'Tarot - Bad Bunny')" class="w-full text-left text-[10px] p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-purple-500/20 transition font-black uppercase">Tarot</button>
-            <button onclick="play('https://p.scdn.co/mp3-preview/3807208945653c8990666014588523b1f516a57d', 'Cincin - Hindia')" class="w-full text-left text-[10px] p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-pink-500/20 transition font-black uppercase">Cincin</button>
-            <button onclick="play('https://p.scdn.co/mp3-preview/6859533b664d47155ec53775f0f35a092895697d', 'Beauty And A Beat - Justin Bieber')" class="w-full text-left text-[10px] p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-blue-500/20 transition font-black uppercase">Beauty and a Beat</button>
+        <div class="grid grid-cols-1 gap-1 mb-3">
+            <button onclick="play('https://p.scdn.co/mp3-preview/766d03d8d67c9431477740e2197be5f5194d2f09', 'Tarot')" class="text-[8px] bg-white/5 p-1.5 rounded-lg hover:bg-purple-500/20 text-left px-3">1. Tarot</button>
+            <button onclick="play('https://p.scdn.co/mp3-preview/3807208945653c8990666014588523b1f516a57d', 'Cincin')" class="text-[8px] bg-white/5 p-1.5 rounded-lg hover:bg-pink-500/20 text-left px-3">2. Cincin</button>
+            <button onclick="play('https://p.scdn.co/mp3-preview/6859533b664d47155ec53775f0f35a092895697d', 'Beauty & Beat')" class="text-[8px] bg-white/5 p-1.5 rounded-lg hover:bg-blue-500/20 text-left px-3">3. Beauty & Beat</button>
         </div>
-        <div class="flex justify-center border-t border-white/10 pt-4">
-            <button onclick="toggleMusic()" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-500 transition shadow-xl">
-                <i id="micon" class="fas fa-play"></i>
-            </button>
-        </div>
+        <button onclick="toggleMusic()" class="w-full bg-white/5 p-2 rounded-xl flex items-center justify-center hover:bg-white/10"><i id="micon" class="fas fa-play text-[10px]"></i></button>
         <audio id="audio" loop></audio>
     </div>
 
     <div id="modal" class="modal p-4">
-        <div class="glass p-10 rounded-[3.5rem] max-w-sm w-full text-center border-purple-500/50 shadow-2xl">
-            <h2 class="text-2xl font-black italic mb-2 tracking-tighter">ORDER CHECKOUT</h2>
-            <p class="text-[9px] text-purple-400 font-bold uppercase mb-6 tracking-widest">Silakan Scan QRIS Dibawah Ini</p>
-            <img src="https://i.ibb.co.com/3wC1Zpm/qris.jpg" class="w-full rounded-3xl mb-6 shadow-2xl border border-white/10">
-            <input type="number" id="wa" placeholder="Nomor Dana/WA Aktif" class="w-full bg-white/5 p-5 rounded-2xl mb-4 outline-none border border-white/10 focus:border-purple-500 font-bold text-center tracking-widest text-sm">
-            <button onclick="gas()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 p-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-lg">Kirim Bukti Ke Admin</button>
-            <button onclick="closeModal()" class="text-[10px] text-gray-500 mt-6 font-bold uppercase tracking-widest hover:text-white transition">Batalkan Transaksi</button>
+        <div class="glass p-8 rounded-[3rem] max-w-sm w-full text-center">
+            <p class="text-[9px] text-purple-400 font-bold mb-4 uppercase tracking-[0.3em]">Scan & Transfer</p>
+            <img src="https://i.ibb.co.com/3wC1Zpm/qris.jpg" class="w-full rounded-2xl mb-4 border border-white/10">
+            <input type="number" id="wa" placeholder="Nomor Dana/WA" class="w-full bg-white/5 p-4 rounded-xl mb-3 outline-none border border-white/10 text-center text-xs">
+            <button onclick="gas()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 p-4 rounded-xl font-bold text-[10px] uppercase tracking-widest">Kirim Bukti</button>
+            <button onclick="closeModal()" class="text-[8px] text-gray-500 mt-4 uppercase">Batal</button>
         </div>
     </div>
 
     <script>
         let pName = "", pPrice = "";
         const audio = document.getElementById('audio');
-        const disk = document.getElementById('disk');
         const micon = document.getElementById('micon');
-        const stitle = document.getElementById('stitle');
+        const disk = document.getElementById('disk');
         let isPlaying = false;
-
-        // Volume diset kecil (0.1 = 10%)
         audio.volume = 0.1;
 
         function play(url, title) {
             audio.src = url;
-            stitle.innerText = title;
-            audio.volume = 0.1; 
-            audio.play().then(() => {
-                isPlaying = true;
-                micon.className = "fas fa-pause";
-                disk.classList.add('disk-spin');
-            }).catch(() => {
-                alert("Klik tombol play di bawah untuk aktifkan suara!");
-            });
+            document.getElementById('stitle').innerText = title;
+            audio.play().then(() => { isPlaying = true; micon.className = "fas fa-pause text-[10px]"; disk.classList.add('disk-spin'); });
         }
 
         function toggleMusic() {
-            if(!audio.src) return alert("Pilih lagunya dulu bos!");
-            if(isPlaying) {
-                audio.pause();
-                micon.className = "fas fa-play";
-                disk.classList.remove('disk-spin');
-            } else {
-                audio.play();
-                micon.className = "fas fa-pause";
-                disk.classList.add('disk-spin');
-            }
+            if(!audio.src) return;
+            if(isPlaying) { audio.pause(); micon.className = "fas fa-play text-[10px]"; disk.classList.remove('disk-spin'); }
+            else { audio.play(); micon.className = "fas fa-pause text-[10px]"; disk.classList.add('disk-spin'); }
             isPlaying = !isPlaying;
         }
 
-        function openOrder(n, p) {
-            pName = n; pPrice = p;
-            document.getElementById('modal').classList.add('active');
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.remove('active');
-        }
-
+        function openOrder(n, p) { pName = n; pPrice = p; document.getElementById('modal').classList.add('active'); }
+        function closeModal() { document.getElementById('modal').classList.remove('active'); }
         function gas() {
             const num = document.getElementById('wa').value;
-            if(!num) return alert("Nomor WA wajib diisi!");
-            const text = `*ORDER BARU - BY FIAN STORE*\n\n🛒 Produk: ${pName}\n💰 Harga: ${pPrice}\n📱 No Pembeli: ${num}\n💳 Status: SUDAH SCAN QRIS\n\n_Mohon segera diproses ya Min!_`;
-            window.open(`https://wa.me/62895393598810?text=${encodeURIComponent(text)}`);
+            if(!num) return alert("Isi nomor bos!");
+            const msg = `*ORDER BARU*\nProduk: ${pName}\nHarga: ${pPrice}\nNomor: ${num}\nStatus: SUDAH TRANSFER`;
+            window.open(`https://wa.me/62895393598810?text=${encodeURIComponent(msg)}`);
         }
     </script>
 </body>
